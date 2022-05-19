@@ -2,9 +2,9 @@ import './NavBar'
 
 const NavBar = () => {
     return (
-        <nav>
+        <nav className='menu'>
             <h1>Turismo Coogranada</h1>
-            <div>
+            <div className='barra'>
                 <button>Nacionales</button>
                 <button>Internacionales</button>
                 <button>Cruceros</button>
