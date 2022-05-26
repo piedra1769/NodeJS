@@ -1,7 +1,30 @@
+import React from 'react'
 import './NavBar'
-import CartWidget from '../CartWidget/CartWidget'
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
 
-const NavBar = () => {
+
+function NavBar () {
+    return (
+        <Navbar bg="light" expand="lg">
+  <Container>
+    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#link">Nacionales</Nav.Link>
+        <Nav.Link href="#link">Internacionales</Nav.Link>
+        <Nav.Link href="#link">Cruceros</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+    )
+}
+
+/*const NavBar = () => {
     return (
         <nav className='menu'>
             <h1>Turismo Coogranada</h1>
@@ -13,6 +36,6 @@ const NavBar = () => {
             <CartWidget />
         </nav>
     )
-}
+}*/
 
 export default NavBar 
