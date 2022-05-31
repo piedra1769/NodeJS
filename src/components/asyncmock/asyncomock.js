@@ -26,4 +26,18 @@ const productos = [
 
 ]
 
-export default productos;
+export const getProducts = () => {
+    return new Promise ((resolve) => {
+        setTimeout (() => {
+            resolve (productos)
+        }, 2000)
+    })
+}
+
+export const getProductsById = (id) => {
+    return new Promise (resolve => {
+        setTimeout (() => {
+            resolve(productos.find(prod => prod.id === id))
+        }, 500)
+    })
+}
