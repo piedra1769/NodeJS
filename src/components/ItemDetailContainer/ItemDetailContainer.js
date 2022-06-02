@@ -14,10 +14,12 @@ const ItemDetailContainer = () => {
 
     return (
         <div className='ItemDetailContainer'>
-            <ItemDetail imagen={productos?.imagen} />
-            <ItemDetail nombre={productos?.nombre} />
-            <ItemDetail descripcion={productos?.descripcion} />
-            <ItemDetail precio={productos?.precio} />
+            <ItemDetail 
+                imagen={productos?.imagen}
+                nombre={productos?.nombre}
+                descripcion={productos?.descripcion}
+                precio={productos?.precio} 
+            />
         </div>
     )
 }
