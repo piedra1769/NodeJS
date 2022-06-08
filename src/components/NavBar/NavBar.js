@@ -6,7 +6,6 @@ import Nav from 'react-bootstrap/Nav'
 import CartWidget from '../CartWidget/CartWidget'
 
 
-
 function NavBar () {
     return (
       <Navbar bg="light" expand="lg">
