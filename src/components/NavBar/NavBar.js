@@ -3,7 +3,7 @@ import './NavBar'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
-import CartWidget from '../CartWidget/CartWidget'
+/*import CartWidget from './CartWidget'*/
 
 
 function NavBar () {
@@ -26,7 +26,7 @@ function NavBar () {
     )
 }
 
-<CartWidget />
+/*<CartWidget />*/
 
 
 export default NavBar 

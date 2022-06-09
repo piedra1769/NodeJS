@@ -1,3 +1,4 @@
+import React from 'react'
 import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import { getProductsById } from '../asyncmock/asyncomock'
@@ -15,10 +16,10 @@ const ItemDetailContainer = () => {
     return (
         <div className='ItemDetailContainer'>
             <ItemDetail 
-                imagen={productos?.imagen}
-                nombre={productos?.nombre}
-                descripcion={productos?.descripcion}
-                precio={productos?.precio} 
+               imagen={productos.imagen}
+                nombre={productos.nombre}
+                descripcion={productos.descripcion}
+                precio={productos.precio}
             />
         </div>
     )
