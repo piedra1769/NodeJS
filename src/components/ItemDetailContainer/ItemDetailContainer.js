@@ -1,25 +1,25 @@
+import React from 'react'
 import './ItemDetailContainer.css'
-import { useState, useEffect } from 'react'
-import { getProductsById } from '../asyncmock/asyncomock'
+import React, { useState, useEffect } from 'react'
+import React, { getProductsById } from '../asyncmock/asyncomock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
-const ItemDetailContainer = () => {
-    const [productos, setProduct] = useState ()
+function ItemDetailContainer() {
+    const [productos, setProduct] = useState()
 
-    useEffect (() => {
-        getProductsById('1').then (response => {
+    useEffect(() => {
+        getProductsById('1').then(response => {
             setProduct(response)
         })
     }, [])
 
     return (
         <div className='ItemDetailContainer'>
-            <ItemDetail 
+            <ItemDetail
                 imagen={productos?.imagen}
                 nombre={productos?.nombre}
                 descripcion={productos?.descripcion}
-                precio={productos?.precio} 
-            />
+                precio={productos?.precio} />
         </div>
     )
 }
